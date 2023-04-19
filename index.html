@@ -1,0 +1,77 @@
+<html> 
+
+<head>
+    <title>
+    cool first website
+    </title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+<style>
+    .row{
+        width:720px;
+        margin: 10px auto 10px auto ;
+    }
+    .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:30px;
+    }
+   
+</style>
+
+</head>
+
+<body style="background-image: url(img/bg.png);
+background-size: cover;">
+    <!--
+    <h1>This is my beloved</h1>
+    <h2>This is the best genshin redhair</h2>
+    <p>These are some examples </p>
+    <img src="img/diwu.jpg" width="400" height="60"/>
+    <img src="img/abluc.gif" width="400" height="600"/>
+    -->
+
+    <div class="row">
+        <div class="image-container"><img id="tooth" src="img/tooth1.png" onmouseover="this.src='img/tooth2.png';" onmouseout="this.src='img/tooth1.png'" height="200" width="200"/></div>
+        <div class="image-container"><img id="eye" src="img/eye1.png" onmouseover="this.src='img/eye2.png';" onmouseout="this.src='img/eye1.png'"height="200" width="200"/></div>
+        <div class="image-container"><img id="cat" src="img/cat1.png" onmouseover="this.src='img/cat2.png';" onmouseout="this.src='img/cat1.png'"height="200" width="200"/></div>
+    </div>
+    <div class="row">
+        <div class="image-container"><img id="flower" src="img/flower1.png" onmouseover="this.src='img/flower2.png';" onmouseout="this.src='img/flower1.png'" height="200" width="200"/></div>
+        <div class="image-container"><img id="wings" src="img/wings1.png" onmouseover="this.src='img/wings2.png';" onmouseout="this.src='img/wings1.png'"height="200" width="200"/></div>
+        <div class="image-container"><img id="shroom" src="img/shroom1.png" onmouseover="this.src='img/shroom2.png';" onmouseout="this.src='img/shroom1.png'"height="200" width="200"/></div>
+    </div>
+    <div class="row">
+        <div class="image-container"><img id="bunny" src="img/bunny1.png" onmouseover="this.src='img/bunny2.png';" onmouseout="this.src='img/bunny1.png'" height="200" width="200"/></div>
+        <div class="image-container"><img id="grave" src="img/grave1.png" onmouseover="this.src='img/grave2.png';" onmouseout="this.src='img/grave1.png'"height="200" width="200"/></div>
+        <div class="image-container"><img id="ghost" src="img/ghost1.png" onmouseover="this.src='img/ghost2.png';" onmouseout="this.src='img/ghost1.png'"height="200" width="200"/></div>
+    </div>
+
+    <script>
+        var sound1 = new buzz.sound("sound/tooth.mp3");
+        var sound2 = new buzz.sound("sound/eye.mp3");
+        var sound3 = new buzz.sound("sound/cat.mp3");
+        var sound4 = new buzz.sound("sound/flower.mp3");
+        var sound5 = new buzz.sound("sound/wings.mp3");
+        var sound6 = new buzz.sound("sound/shroom.mp3");
+        var sound7 = new buzz.sound("sound/bunny.mp3");
+        var sound8 = new buzz.sound("sound/grave.mp3");
+        var sound9 = new buzz.sound("sound/ghost.mp3");
+
+        window.onload = function() {
+                document.getElementById('tooth').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('eye').addEventListener('mouseover', function () {sound2.play(); });
+                document.getElementById('cat').addEventListener('mouseover', function () {sound3.play(); });
+                document.getElementById('flower').addEventListener('mouseover', function () {sound4.play(); });  
+                document.getElementById('wings').addEventListener('mouseover', function () {sound5.play(); });
+                document.getElementById('shroom').addEventListener('mouseover', function () {sound6.play(); });
+                document.getElementById('bunny').addEventListener('mouseover', function () {sound7.play(); });  
+                document.getElementById('grave').addEventListener('mouseover', function () {sound8.play(); });
+                document.getElementById('ghost').addEventListener('mouseover', function () {sound9.play(); });
+        }
+    </script>
+</body>
+
+
+
+</html>
